@@ -31,6 +31,7 @@ var btPrintHandling = {
         document.addEventListener("deviceready", btPrintHandling.printText, false);
     },
     listPrinter: function () {
+        alert('inside list printer');
         BTPrinter.list(function (data) {
             console.log("Success");
             console.log(data); //list of printer in data array
