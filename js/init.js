@@ -39,6 +39,7 @@ var btPrintHandling = {
         }, function (err) {
             console.log("Error");
             console.log(err);
+            alert(err);
         });
     },
     connectPrinter: function () {
@@ -50,7 +51,8 @@ var btPrintHandling = {
             alert(data);
         }, function (err) {
             console.log("Error");
-            console.log(err)
+            console.log(err);
+            alert(err);
         }, printerName)
     },
     disconnectPrinter: function () {
@@ -62,7 +64,8 @@ var btPrintHandling = {
             alert('printer disconnected');
         }, function (err) {
             console.log("Error");
-            console.log(err)
+            console.log(err);
+            alert(err);
         }, printerName)
     },
     printText: function () {
